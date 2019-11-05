@@ -7,12 +7,12 @@ class AddBuilding extends React.Component {
 		this.props.addBuilding()
 
 	render() {
-		
+		//there might be an error with how i implemented addBuilding
 		//keep getting error here
 		const { addBuilding } = this.props;
 		return (
 			<div>
-				<i>Add a new building with the form below</i>
+				<i>Enter information to add a new building to list</i>
 				<p></p>
 				<form>
 					<input
@@ -26,7 +26,7 @@ class AddBuilding extends React.Component {
 				<form>
 					<input
 					type="text"
-					placeholder="Enter name"
+					placeholder="Enter building name"
 					ref={ (name) => this.name = name }
 					/>
 				</form>
@@ -35,7 +35,7 @@ class AddBuilding extends React.Component {
 				<form>
 					<input
 					type="text"
-					placeholder="Enter latitude"
+					placeholder="Enter its latitude"
 					ref={ (latitude) => this.latitude = latitude }
 					/>
 				</form>
@@ -44,7 +44,7 @@ class AddBuilding extends React.Component {
 				<form>
 					<input
 					type="text"
-					placeholder="Enter longitude"
+					placeholder="Enter its longitude"
 					ref={ (longitude) => this.longitude = longitude }
 					/>
 				</form>
@@ -53,7 +53,7 @@ class AddBuilding extends React.Component {
 				<form>
 					<input
 					type="text"
-					placeholder="Enter address"
+					placeholder="Enter its address"
 					ref={ (address) => this.address = address }
 					/>
 				</form>
@@ -70,6 +70,7 @@ class AddBuilding extends React.Component {
 					</button>
 				</p>
 			</div>
+		
 		);
 	}
 }
