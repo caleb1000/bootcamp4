@@ -14,12 +14,15 @@ if(building)
 
 		<div>
 
-		<h4>ID:</h4>
+		<h3>ID:</h3>
 		<p>{building.id}</p>
-		<h4>Code:</h4>
+		
+		<h3>Code:</h3>
 		<p>{building.code}</p>
-		<h4>Name:</h4>
+		
+		<h3>Name:</h3>
 		<p>{building.name}</p>
+		
 		{building.coordinates && <p>Coordinates:{' '+building.coordinates.latitude},{' '+building.coordinates.longitude}</p>}
 		{building.address && <p>Address:{' ' + building.address}</p>}
 		<RemoveBuilding removeBuilding={removeBuilding} />
@@ -29,15 +32,14 @@ if(building)
 
 
 
-
-
-		return (
-			<div>
-				<p>
-					{' '}
-					<i>Click on a name to view more information</i>
-				</p>
-			</div>
+return (
+	<div>
+		<p>
+		{' '}
+		<i>Click to get more info/i>
+		</p>
+		
+	</div>
 		);
 	}
 }
