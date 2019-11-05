@@ -1,10 +1,14 @@
 import React from 'react';
 
 class AddBuilding extends React.Component {
+	
 	addBuilding() {
+		
 		this.props.addBuilding()
 
 	render() {
+		
+		//keep getting error here
 		const { addBuilding } = this.props;
 		return (
 			<div>
@@ -17,6 +21,8 @@ class AddBuilding extends React.Component {
 					ref={ (code) => this.code = code }
 					/>
 				</form>
+		
+		
 				<form>
 					<input
 					type="text"
@@ -24,6 +30,8 @@ class AddBuilding extends React.Component {
 					ref={ (name) => this.name = name }
 					/>
 				</form>
+		
+		
 				<form>
 					<input
 					type="text"
@@ -31,6 +39,8 @@ class AddBuilding extends React.Component {
 					ref={ (latitude) => this.latitude = latitude }
 					/>
 				</form>
+		
+		
 				<form>
 					<input
 					type="text"
@@ -38,6 +48,8 @@ class AddBuilding extends React.Component {
 					ref={ (longitude) => this.longitude = longitude }
 					/>
 				</form>
+		
+		
 				<form>
 					<input
 					type="text"
@@ -61,3 +73,5 @@ class AddBuilding extends React.Component {
 		);
 	}
 }
+
+export default AddBuilding;
