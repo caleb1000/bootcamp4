@@ -32,6 +32,16 @@ class AddBuilding extends React.Component {
 				</form>
 		
 		
+				
+				<form>
+					<input
+					type="text"
+					placeholder="Enter its address"
+					ref={ (address) => this.address = address }
+					/>
+				</form>
+		
+		
 				<form>
 					<input
 					type="text"
@@ -50,13 +60,6 @@ class AddBuilding extends React.Component {
 				</form>
 		
 		
-				<form>
-					<input
-					type="text"
-					placeholder="Enter its address"
-					ref={ (address) => this.address = address }
-					/>
-				</form>
 				<p>
 					{' '}
 					<button onClick={() => addBuilding(
